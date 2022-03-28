@@ -56,7 +56,7 @@ export default function TodoItem({ name, todo }) {
           onChange={(e) => setText(e.target.value)}
           onFocus={(e) => handleFocus(e, todo.id)}
           type="text"
-          className="input is-white"
+          className="input is-white is-radiusless is-shadowless"
           value={text}
         />
       </div>

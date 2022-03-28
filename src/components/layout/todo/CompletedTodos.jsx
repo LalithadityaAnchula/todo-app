@@ -12,7 +12,7 @@ export default function CompletedTodos() {
   };
 
   return (
-    <div className="container my-3 px-5">
+    <div className="container my-1 px-5">
       <div className="level is-mobile">
         <div className="level-left">
           <div className="level-item">

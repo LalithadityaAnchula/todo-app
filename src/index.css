@@ -9,6 +9,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  overflow: hidden;
+}
+
 .container {
   font-family: "Comic Neue", cursive;
 }

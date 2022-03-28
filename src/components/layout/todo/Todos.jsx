@@ -17,8 +17,8 @@ export default function Todos() {
   } = useContext(TodoContext);
 
   return (
-    <>
-      <div className="container mx-3 px-3 my-1">
+    <div className="container">
+      <div className="section mx-3 px-3 my-1">
         <h1 className="title is-3">{name}</h1>
         <div className="level is-mobile">
           <div className="level-left">
@@ -41,6 +41,6 @@ export default function Todos() {
         <TodoItems />
       </div>
       <CompletedTodos />
-    </>
+    </div>
   );
 }

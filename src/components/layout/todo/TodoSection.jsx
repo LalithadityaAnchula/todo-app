@@ -4,7 +4,7 @@ import Todos from "./Todos";
 export default function TodoSection() {
   return (
     <div className="columns is-desktop">
-      <div className="column is-5">
+      <div className="column">
         <TodoLists />
       </div>
       <div className="column">

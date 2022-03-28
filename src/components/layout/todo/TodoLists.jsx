@@ -12,8 +12,8 @@ export default function TodoLists() {
   const { lists, addList } = useContext(TodoContext);
   const listNames = lists.map((item) => item.name);
   return (
-    <>
-      <div className="container mx-3 px-3 my-1">
+    <div className="container">
+      <div className="section mx-3 px-3 my-1">
         <h1 className="title is-3">Todo Lists</h1>
         <div className="level is-mobile">
           <div className="level-left">
@@ -36,9 +36,11 @@ export default function TodoLists() {
         </div>
         {isAdding && <TodoForm add={addList} name={null} />}
       </div>
-      {listNames.map((item) => (
-        <TodoList key={item} listName={item} />
-      ))}
-    </>
+      <div className="container m-2 p-4">
+        {listNames.map((item) => (
+          <TodoList key={item} listName={item} />
+        ))}
+      </div>
+    </div>
   );
 }
