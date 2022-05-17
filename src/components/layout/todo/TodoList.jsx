@@ -16,7 +16,7 @@ export default function TodoList({ listName }) {
       onClick={() => {
         handleClick();
       }}
-      className="box"
+      className="box is-clickable"
     >
       <div className="level">
         <div className="level-left">
